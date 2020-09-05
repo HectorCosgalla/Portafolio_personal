@@ -9,10 +9,10 @@
 :root{
   --bg: #A00000;
   --fg: #141414;
-  --cardbg: #FF55FC;
-  --buttonbg: #CACACA;
+  --cardbg: #FF558C;
+  --buttonbg: #CC0000;
   --border: 5px;
-  --shadow: 0 10px 10px rgba(204, 0, 0, 0.5);
+  --shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
   --accent: #FFAC33;
 }
 
@@ -90,5 +90,5 @@ body {
 }
 
 .listitem:hover {
-  background-color: #FF00FF;
+  background-color: #FF6679;
 }
