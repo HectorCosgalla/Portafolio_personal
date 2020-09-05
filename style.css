@@ -7,7 +7,7 @@
 }
 
 :root{
-  --bg: #C02535;
+  --bg: #A00000;
   --fg: #141414;
   --cardbg: #FF55FC;
   --buttonbg: #CACACA;
@@ -27,7 +27,6 @@ body {
   width: 45%;
   margin: 5% auto;
   padding: 50px;
-  /* border-radius: var(--border); */
   border-radius: 35%;
   box-shadow: var(--shadow);
 }
