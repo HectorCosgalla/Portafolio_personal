@@ -7,7 +7,6 @@
 }
 
 :root{
-  --bg: #A00000;
   --fg: #141414;
   --cardbg: #eb4034;
   --buttonbg: #FF558C;
@@ -17,10 +16,9 @@
 }
 
 body {
-  /*background-color: var(--bg);*/
   color: var(--fg);
   font-family: 'Lato', sans-serif;
-  background-image: url(/img/fire.gif);
+  background-image: url(img/fire.gif);
 }
 
 .welcome{
