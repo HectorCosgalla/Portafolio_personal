@@ -28,4 +28,6 @@ public class Technologies {
         this.name = name;
         this.years = years;
     }
+
+    public Technologies(){}
 }

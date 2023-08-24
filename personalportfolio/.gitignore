@@ -3,7 +3,7 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-src/main/java/com/valcos98/personalportfolio/configuration/JasyptEncryptorConfiguration.java
+src/main/java/com/valcos98/personalportfolio/configuration/**
 
 ### STS ###
 .apt_generated
