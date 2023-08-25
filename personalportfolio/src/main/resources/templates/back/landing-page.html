@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td>Technology</td>
+                <td>Years</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each=" technology : ${techs}">
+                <td th:text="${technology.name}">Tech name</td>
+                <td th:text="${technology.years}">Years</td>
+                <td><a th:href="@{'/edit/'+${technology.id}}">Edit</a></td>
+                <td><a th:href="@{'/delete/'+${technology.id}}">Delete</a></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

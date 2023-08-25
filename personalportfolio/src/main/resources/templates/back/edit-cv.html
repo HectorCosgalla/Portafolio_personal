@@ -6,14 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Ingresa algo wey:</h1>
+    <h1>Editando ando:</h1>
     <form 
-    action="#"
-    method="post"
-    th:action="@{/edit}">
-    <label for="technologies">write the techs:</label></br>
-    <textarea th:value="${techString}" name="techString" id="technologies" cols="30" rows="10"></textarea></br>
-    <button type="submit">Submit</button>
+    th:action="@{'/edit/'+${technology.id}}"
+    th:object="${technology}"
+    method="post">
+        <label for="tech-name">Technology:</label><br>
+        <input type="text" name="name" id="tech-name" th:field="*{name}"><br>
+        <label for="tech-years">Years of experience</label><br>
+        <input type="text" name="years" id="tech-years" th:field="*{years}">
+        <button type="submit">Upload</button>
     </form>
 </body>
 </html>
