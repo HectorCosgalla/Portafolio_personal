@@ -31,7 +31,7 @@ public class MasterController {
     public String getEditPage(@PathVariable Long id,Model model){
         Technologies techToEdit = techRepo.getReferenceById(id);
         model.addAttribute("technology", techToEdit);
-        return "back/edit-cv";
+        return "back/technologies/edit-cv";
     }
 
     @PostMapping("/edit/{id}")
@@ -52,7 +52,7 @@ public class MasterController {
     @GetMapping("/upload")
     public String getUploadPage(){
         
-        return "back/upload-cv";
+        return "back/technologies/upload-cv";
     }
 
     @PostMapping("/upload")
